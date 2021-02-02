@@ -1,0 +1,38 @@
+<div class = "Salem_kids">
+    
+    
+    <div class="Main_Container font-1">
+        <!--div class="centerimg">
+            <img src="./assets/img/salemkids.png" width="100" heigth="100" (click)="gotoFacebook()">
+        </div>
+        <div class= "text-fc">
+         <div class="fc-old center" (click)="gotoFacebook()">   
+        <p>Transmisiones por Facebook cada 15 días</p></div>
+        
+        <div>
+        <p>Próxima transmisión</p>
+        <p>Sábado 15 de enero 2021</p>
+    </div>
+</div-->
+    <div>
+        <h2>ÚLTIMO CULTO SALEM KIDS</h2>
+    
+        <fb-video href="https://fb.watch/39J05NaLou/"
+        (startPlaying)="onVideoEvent('startedPlaying')"
+        (paused)="onVideoEvent('paused')"
+        (finishedPlaying)="onVideoEvent('finishedPlaying')"
+        (startedBuffering)="onVideoEvent('startedBuffering')"
+        (finishedBuffering)="onVideoEvent('finishedBuffering')"
+        (error)="onVideoEvent('error')"
+        (width) ="220"
+        target ="_top"
+    ></fb-video>
+    <div>
+        21 de Enero 2021
+    </div>
+
+    </div>
+    
+    </div>
+
+</div>

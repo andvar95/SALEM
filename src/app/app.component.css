@@ -1,0 +1,22 @@
+.menuContainer{
+    width:95%;
+    overflow:hidden;
+}
+
+
+.menuContainer ul {
+    display:flex;
+    padding:0;
+    width:100%;
+}
+
+.menuContainer li {
+    width:100%;
+    list-style: none;
+}
+
+.menuContainer div
+{
+    width:100%;
+}
+

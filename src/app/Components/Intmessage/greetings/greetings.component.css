@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.font-1 > *{
+    font-size: 16px;
+    font-family: 'roboto',sans-serif;
+    color:black; 
+}
+
+.Greetings{
+    background-color: white;
+    display:flex;
+    padding:5%;
+    border:1px solid black;
+    width:auto;
+}
