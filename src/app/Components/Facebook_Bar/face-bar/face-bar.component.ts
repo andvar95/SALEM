@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit, ViewChild } from '@angular/core';
-import { FacebookService, LoginResponse, LoginOptions, UIResponse, UIParams, FBVideoComponent } from 'ngx-facebook';
-
+import { FacebookService, LoginResponse, LoginOptions, UIResponse, UIParams, FBVideoComponent ,InitParams} from 'ngx-facebook';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 
 @Component({
@@ -10,9 +10,32 @@ import { FacebookService, LoginResponse, LoginOptions, UIResponse, UIParams, FBV
 })
 export class FaceBarComponent implements OnInit {
   @ViewChild(FBVideoComponent) video: any;
-  constructor( private fb: FacebookService) {
+  htmlFace:string="";
+    div:string[]=[];
+    div2:string[]=[];
+    link_Vivo:string = "";
+    estado:string = "";
+  constructor( private fb: FacebookService, private sanitizer:DomSanitizer) {
+
+     
     
+
+    const initParams: InitParams = {
+      appId: '254094169560540',
+      cookie     : true,
+      xfbml      : true,
+      version: 'v9.0'
+    };
+
+
+    fb.init(initParams);
+  
+
+
    }
+
+
+
 
    playVideo() {
     this.video.play();
@@ -42,6 +65,25 @@ export class FaceBarComponent implements OnInit {
     console.log('User paused the video');
   }
   ngOnInit(): void {
+  
+
+
+    
+//?access_token=EAADnGOi3VdwBADCJ5YuAH8FACq6B68cnkRMbsgcZBEuwmkLz6wIaVbWSQ5avrZBSz5jGl8cI43ZAactrHzInBoDKe78DSqvQda2bGG9F2lENyZAHzcQHPUlIwrnygofCVLSjl3VSzDNoZCvryEis386A9SYy5EbMZD
+    this.fb.api('/111828500444787/live_videos?access_token=EAADnGOi3VdwBADCJ5YuAH8FACq6B68cnkRMbsgcZBEuwmkLz6wIaVbWSQ5avrZBSz5jGl8cI43ZAactrHzInBoDKe78DSqvQda2bGG9F2lENyZAHzcQHPUlIwrnygofCVLSjl3VSzDNoZCvryEis386A9SYy5EbMZD','get')
+    .then((res:any) =>{
+      this.estado = res.data[0].status;
+      console.log(res.data[0]);
+      this.htmlFace = res.data[0].embed_html;
+      this.div = this.htmlFace.split(" ");
+      this.div2= this.div[1].split('"');
+      this.link_Vivo =this.div2[1];
+      console.log("url "+this.link_Vivo);
+    
+    })
+    .catch(e => console.log(e));
+  
+    
   }
 
   goToPage(){

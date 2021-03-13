@@ -1,30 +1,31 @@
 <nav  >
 
-    <ul class="navigator font-1">
+    <ul class="navigator font-1 ">
     
-            <li><a>Logo</a>
+            <li><a routerLink = ''>Logo</a>
                 
             </li>
         
-
+           <div class="options">
         
-            <li><a>Cultos</a>
+            <!--li><a>Cultos</a>
              <ul>
                 <li><a>Viernes</a></li>
                 <li><a>Sábados</a></li>
                 <li><a>Domingo</a></li>
             </ul>
-            </li>
+            </li-->
 
 
         
             <li>
             <a>Ministerios</a>
             <ul>
-                <li><a>Alabanza</a></li>
-                <li><a>Danza</a></li>
-                <li><a>Empresarial</a></li>
+                <li><a>Salem Kids</a></li>
+                <li><a>Jóvens Torre Fuerte</a></li>
                 <li><a>Ujieres</a></li>
+                <li><a>Danza</a></li>
+                <li><a>Alabanza</a></li>
             </ul>
             
             </li>
@@ -32,16 +33,19 @@
 
     
             <li>
-            <a>Donativos</a>
+            <a routerLink ="donativos">Donativos</a>
             </li>
     
 
-        
             <li>
-            <a>Contáctanos</a> 
-            </li>
+                <a routerLink = "conocenos" >Conócenos</a>
+                </li>
         
-
+        
+       
+        
+            </div>
 
     </ul>
 
+<router-outlet></router-outlet>

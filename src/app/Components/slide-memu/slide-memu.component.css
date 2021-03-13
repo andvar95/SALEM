@@ -1,9 +1,10 @@
 *{
-margin:1%;
+margin:5% 1%; 
 }
 .menuContainer{
 
     position: relative;
+    bottom:12%;
 }
 
 
@@ -31,4 +32,22 @@ margin:1%;
 
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.2);
+  }
+
+
+  .fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade{
+    from{opacity:0.4}
+    to {opacity:1}
+  }
+
+  @keyframes fade{
+    from{opacity:0.4}
+    to{opacity:1}
   }

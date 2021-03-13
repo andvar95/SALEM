@@ -1,13 +1,18 @@
-<div class = "FC_bar">
+<div class = "Anuncio shadow">
     
-    <div class="Main_Container font-1">
+    <div class="Main_Container fontW-1">
     <!--div class = "centerimg">
         <img  src="./assets/img/Facebook.png" (click)="goToPage()" >
     </div-->
 
-<div>
-    <h2>ÚLTIMA ESCUELA DOMINICAL</h2>
-    <fb-video href="https://fb.watch/39J05NaLou/"
+<div class= "video">
+    <h2 *ngIf = "estado == 'LIVE' else noVivo">EN VIVO AHORA</h2>
+    <ng-template #noVivo><h2>Última Transmisión</h2></ng-template>
+     <!--"ng serve --ssl --ssl-key d:\\certificates\\localhost.key  --ssl-cert d:\\certificates\localhost.crt-->
+    
+    <iframe [src]=link_Vivo|safeUrl width="200vw" height="300vh" style="border:none;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+   
+    <!--fb-video href="https://fb.watch/3zbK4gf8G2/"
     (startPlaying)="onVideoEvent('startedPlaying')"
     (paused)="onVideoEvent('paused')"
     (finishedPlaying)="onVideoEvent('finishedPlaying')"
@@ -16,7 +21,7 @@
     (error)="onVideoEvent('error')"
     (width) ="220"
     target ="_top"
-></fb-video>
+></fb-video-->
 
 <div>
     10 diciembre 2021

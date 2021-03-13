@@ -1,0 +1,14 @@
+[req]
+default_bits = 2048
+prompt = no
+default_md = sha256
+distinguished_name = dn
+
+[dn]
+C=CO
+ST=Sucre
+L=Sincelejo
+O=andvar
+OU=TI
+emailAddress=hello@example.com
+CN = localhost

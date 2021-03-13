@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,NO_ERRORS_SCHEMA,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import{ClickOutsideModule} from 'ng-click-outside';
 import { FacebookModule } from 'ngx-facebook';
 import { FacebookService, LoginResponse, LoginOptions, UIResponse, UIParams, FBVideoComponent } from 'ngx-facebook';
 import { FormsModule } from '@angular/forms';
@@ -18,7 +17,11 @@ import { SalemKidsBannerComponent } from './Components/SalemK_Bar/salem-kids-ban
 import { SlideMemuComponent } from './Components/slide-memu/slide-memu.component';
 import { HorariosCultosComponent } from './Components/menu_opt/horarios-cultos/horarios-cultos.component';
 import { TransmiComponent } from './Components/menu_opt/transmi/transmi.component';
-import { CoursesWComponent } from './courses-w/courses-w.component';
+import { MainPageComponent } from './Components/main-page/main-page.component';
+import { ConocenosComponent } from './Components/conocenos/conocenos.component';
+import { SafeUrlPipe } from './Pipes/safe-url.pipe';
+import { DonativosComponent } from './Components/donativos/donativos.component';
+
 
 @NgModule({
   declarations: [
@@ -33,12 +36,15 @@ import { CoursesWComponent } from './courses-w/courses-w.component';
     SlideMemuComponent,
     HorariosCultosComponent,
     TransmiComponent,
-    CoursesWComponent
+    MainPageComponent,
+    ConocenosComponent,
+    SafeUrlPipe,
+    DonativosComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ClickOutsideModule,
     FormsModule,
     HttpClientModule,
     FacebookModule.forRoot()
