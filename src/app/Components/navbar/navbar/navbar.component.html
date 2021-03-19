@@ -3,19 +3,20 @@
 
     <ul class= "font-1">
         
+
         <a href="#" >
             <li>
             Logo
             </li>
         </a>
 
-        <a href="#" (mouseover)="mostrarcultos()" >
+        <a href="#" >
             <li>
              Cultos
             </li>
         </a>
 
-        <a  href="#" (mouseover)="mostrarmin()" >
+        <a  href="#" >
             <li>
             Ministerios
             </li>
@@ -42,49 +43,7 @@
 
 </nav>
 
-<div class="sub_menu cul"(clickOutside)="quitarcultos()"> 
-    <ul class = "font-1 " *ngIf="cultos" >
-    <a href="#"  >
-        <li>
-        Viernes
-        </li>
-    </a>
-
-    <a href="#" >
-        <li>
-         Sabado
-        </li>
-    </a>
-
-    
-    <a href="#">
-        <li>
-         Domingo
-        </li>
-    </a>
-</ul>
-</div>
 
 
-<div class="sub_menu min" (clickOutside)="quitarmin()"> 
-    <ul class = "font-1 " *ngIf="ministerios" >
-    <a href="#"  >
-        <li>
-        Alabanza
-        </li>
-    </a>
-
-    <a href="#" >
-        <li>
-         Danza
-        </li>
-    </a>
-    
-    <a href="#">
-        <li>
-         Intercesión        </li>
-    </a>
-</ul>
-</div>
 
 <router-outlet></router-outlet>

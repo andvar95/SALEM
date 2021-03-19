@@ -8,7 +8,7 @@
 <div class= "video">
     <h2 *ngIf = "estado == 'LIVE' else noVivo">EN VIVO AHORA</h2>
     <ng-template #noVivo><h2>Última Transmisión</h2></ng-template>
-     <!--"ng serve --ssl --ssl-key d:\\certificates\\localhost.key  --ssl-cert d:\\certificates\localhost.crt-->
+     <!--"ng serve --ssl --ssl-key server.key  --ssl-cert server.crt-->
     
     <iframe [src]=link_Vivo|safeUrl width="200vw" height="300vh" style="border:none;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
    
