@@ -7,7 +7,6 @@ import { HttpClientModule,HttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './Components/navbar/navbar/navbar.component';
 import { FaceBarComponent} from './Components/Facebook_Bar/face-bar/face-bar.component';
 import { Navbar2Component } from './Components/navbar/navbar2/navbar2.component';
 import { GreetingsComponent } from './Components/Intmessage/greetings/greetings.component';
@@ -26,7 +25,6 @@ import { DonativosComponent } from './Components/donativos/donativos.component';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     FaceBarComponent,
     Navbar2Component,
     GreetingsComponent,
