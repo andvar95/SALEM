@@ -2,13 +2,24 @@
 
 .col{
     display:grid;
-    grid-template-columns:40% 40%;
+    grid-template-columns:46% 46%;
+    
 }
+
+@media (max-width:600px){
+    .col{
+        grid-template-columns: auto;
+    }
+}
+
 
 .Anuncio{
     background-color: white;
-    font-family: 'Roboto', sans-serif;
+    padding:5%;
+}
 
+.fontF-1{
+    color:black;
 }
 
 h2{
