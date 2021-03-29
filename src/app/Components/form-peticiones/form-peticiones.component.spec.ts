@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HorariosCultosComponent } from './horarios-cultos.component';
+import { FormPeticionesComponent } from './form-peticiones.component';
 
-describe('HorariosCultosComponent', () => {
-  let component: HorariosCultosComponent;
-  let fixture: ComponentFixture<HorariosCultosComponent>;
+describe('FormPeticionesComponent', () => {
+  let component: FormPeticionesComponent;
+  let fixture: ComponentFixture<FormPeticionesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HorariosCultosComponent ]
+      declarations: [ FormPeticionesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HorariosCultosComponent);
+    fixture = TestBed.createComponent(FormPeticionesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

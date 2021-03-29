@@ -2,6 +2,7 @@
     display:flex;
     justify-content: space-around;
     padding:7%;
+    height: 50vh;
 }
 
 .font-1 > *{
@@ -11,5 +12,5 @@
 }
 
 .Container{
-    background-color:#7C11FA;
+    background-color: #3b5998;
 }

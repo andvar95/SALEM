@@ -1,6 +1,7 @@
 body{
     margin:0;
-    padding:0;}
+    padding:0;
+    }
 
 .c{
     position:relative;
@@ -10,7 +11,8 @@ body{
 
 .fontW-1 > *{
     font-size:1rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:Lato,sans-serif;
+    /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;*/
     color:white; 
     font-weight: bold;
 }
@@ -24,8 +26,9 @@ body{
 }
 
 .shadow{
-    box-shadow: 1px 1px 1px 1px rgba(173, 170, 170, 0.973);
-    border: 1px solid rgba(173, 167, 167, 0.7);
+    box-shadow: 1px 1px 1px 1px rgba(119, 118, 118, 0.973);
+    border-bottom: 1px solid rgba(94, 91, 91, 0.7);
+    border-top: 1px solid rgba(94, 91, 91, 0.7);
     border-radius:3px;
 }
 
@@ -36,10 +39,12 @@ a{
 
 
 .Anuncio{
-    background-color:#46D3FA;
+   
+ 
     padding:2%;
-    margin:3% 7%;
+    margin: 2% 0%;
     text-align:center;
+    overflow:auto;
    
    
 }
@@ -121,3 +126,13 @@ a{
     from{width:0%;}
     to{width:100%;}
 }
+
+.just{
+    text-align: justify;
+}
+
+
+.Blue_title{
+    color: #007bff;
+ }
+ 

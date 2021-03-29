@@ -1,5 +1,7 @@
 
-
+.Blue_title{
+   color: #007bff;
+}
 
 .video{
     text-align: center;
@@ -9,7 +11,9 @@
 
 
 .Anuncio{
-    background-color: #3b5998;
+  
+    overflow:hidden;
+  
 }
 
 .text-fc{

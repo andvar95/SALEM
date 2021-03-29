@@ -6,6 +6,10 @@
     
 }
 
+.fix-w{
+    min-height:70vh;
+    height:70vh;
+}
 @media (max-width:600px){
     .col{
         grid-template-columns: auto;
@@ -26,8 +30,8 @@ h2{
     font-weight: bold;
 }
 .abs{
-    position:relative;
- 
+   
+
     padding-top:5%;
 }
 
@@ -40,4 +44,17 @@ h2{
 
 h2{
     font-size:3rem;
+}
+
+.historia{
+    width:auto;
+}
+
+.arrow{
+    color:black;
+}
+
+.Anuncio{
+    margin:2% 3%;
+    
 }
