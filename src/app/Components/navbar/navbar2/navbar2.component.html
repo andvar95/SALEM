@@ -1,6 +1,6 @@
-<nav  >
+<nav  (window:scroll)="doSomethingOnInternalScroll($event)" >
 
-    <ul class="navigator font-1 ">
+    <ul id="nav" class="navigator fontW-1  nav_transp">
     
         <a routerLink = ''>  <img src="../../../../assets/img/logo.png" width="50px" height="80px"></a>
                 
@@ -18,8 +18,8 @@
 
         
             <li>
-            <a>Ministerios</a>
-            <ul>
+            <a>Ministerios  <span>&#9660;</span></a>
+            <ul id="submnenu" class="nav-sub">
                 <li><a>Salem Kids</a></li>
                 <li><a>Jóvens Torre Fuerte</a></li>
                 <li><a>Ujieres</a></li>
@@ -37,8 +37,8 @@
     
 
             <li>
-                <a  >Conócenos</a>
-                <ul>
+                <a  >Conócenos  <span>&#9660;</span></a>
+                <ul id="submnenu" class="nav-sub">
                     <li><a routerLink = "conocenos">¿Quiénes Somos?</a></li>
                     <li><a routerLink = "pesca">5 Propositos</a></li>
                 </ul>

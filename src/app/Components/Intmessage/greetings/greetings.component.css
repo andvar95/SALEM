@@ -8,6 +8,9 @@
 
 .img_up{
     background-image:url("../../../../../src/assets/img/Salem.jpg");
+    background-size: cover;
+    background-repeat: none;
+
 
 
 }

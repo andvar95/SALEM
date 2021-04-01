@@ -2,7 +2,7 @@
    
     width:60vw;
     margin:5% auto;
-    border: 1px solid rgb(168, 167, 167);
+
     border-radius:10px;
   
 }
@@ -13,7 +13,9 @@
         width:90%;
     }
 }
-
+.fontW-1>*{
+    color:black;
+}
 
 .form>*{
     display:flex;
