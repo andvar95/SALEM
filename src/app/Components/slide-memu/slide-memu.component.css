@@ -1,6 +1,4 @@
-*{
-margin:5% 4%; 
-}
+
 .menuContainer{
 
     position: relative;
@@ -50,4 +48,28 @@ margin:5% 4%;
   @keyframes fade{
     from{opacity:0.4}
     to{opacity:1}
+  }
+
+  .propositos{
+
+    top:10%;
+    margin: 30vh  12% 10vh  12%;
+
+
+  }
+
+ .estilo_1, .estilo_2{
+   color:#616161;
+   border-radius:20px;
+   background-color: rgba(0,0,0,0.1);
+
+ }
+
+  .main{
+    margin:10% 0;
+  }
+
+  .conocenos{
+    margin:5% ;
+    
   }

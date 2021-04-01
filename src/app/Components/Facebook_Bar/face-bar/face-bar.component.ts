@@ -24,11 +24,14 @@ export class FaceBarComponent implements OnInit {
       appId: '254094169560540',
       cookie     : true,
       xfbml      : true,
-      version: 'v9.0'
+      version: 'v10.0'
     };
 
+    fb.init(initParams)
+  
+    fb.getLoginStatus().then((res:any)=>console.log(res))
 
-    fb.init(initParams);
+  
   
 
 
@@ -66,15 +69,17 @@ export class FaceBarComponent implements OnInit {
   }
   ngOnInit(): void {
   
+  
 
 
     
 //?access_token=EAADnGOi3VdwBADCJ5YuAH8FACq6B68cnkRMbsgcZBEuwmkLz6wIaVbWSQ5avrZBSz5jGl8cI43ZAactrHzInBoDKe78DSqvQda2bGG9F2lENyZAHzcQHPUlIwrnygofCVLSjl3VSzDNoZCvryEis386A9SYy5EbMZD
     this.fb.api('/111828500444787/live_videos?access_token=EAADnGOi3VdwBADCJ5YuAH8FACq6B68cnkRMbsgcZBEuwmkLz6wIaVbWSQ5avrZBSz5jGl8cI43ZAactrHzInBoDKe78DSqvQda2bGG9F2lENyZAHzcQHPUlIwrnygofCVLSjl3VSzDNoZCvryEis386A9SYy5EbMZD','get')
     .then((res:any) =>{
-      this.estado = res.data[0].status;
-      console.log(res.data[0]);
-      this.htmlFace = res.data[0].embed_html;
+      console.log(res)
+      this.estado = res.data[1].status;
+      console.log(res.data[1]);
+      this.htmlFace = res.data[1].embed_html;
       this.div = this.htmlFace.split(" ");
       this.div2= this.div[1].split('"');
       this.link_Vivo =this.div2[1];

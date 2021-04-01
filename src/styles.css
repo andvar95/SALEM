@@ -32,6 +32,12 @@ body{
     border-radius:3px;
 }
 
+.shadow-2{
+    box-shadow: 1px 1px 1px 1px rgba(175, 174, 174, 0.973);
+    border:1px solid rgba(163, 160, 160, 0.7);
+    border-radius:3px;
+}
+
 a{
     text-decoration: none;
     
@@ -39,10 +45,11 @@ a{
 
 
 .Anuncio{
+   width:80%;
    
- 
+    background-color:white;
     padding:2%;
-    margin: 2% 0%;
+    margin: 2% auto;
     text-align:center;
     overflow:auto;
    

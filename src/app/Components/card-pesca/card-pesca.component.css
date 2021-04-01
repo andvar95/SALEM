@@ -1,0 +1,30 @@
+
+
+.main-card{
+    border:1px solid rgb(129, 123, 123);
+    height: 80vh;
+    width: 80vw;
+    max-width:100%;
+    border-radius: 10px;
+    overflow:auto;
+    background-color:white;
+
+
+    border: 1px solid red;
+    padding:2% 0%;
+}
+
+.img_card{
+    border-radius: 10px;
+    height: 30vh;
+    width: auto;
+  
+}
+
+img{
+    border-radius: 10px 10px 0 0;
+}
+
+.tx-card{
+    padding:0% 4%;
+}

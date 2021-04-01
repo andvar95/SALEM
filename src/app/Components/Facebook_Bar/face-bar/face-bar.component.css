@@ -11,9 +11,20 @@
 
 
 .Anuncio{
-  
+
+    width:35vw;
+    height:80vh;
     overflow:hidden;
+    margin:9% 0%;
   
+}
+
+@media (max-width:600px){
+    
+    .Anuncio{
+        grid-template-columns: auto;
+        width:90%;
+    }
 }
 
 .text-fc{

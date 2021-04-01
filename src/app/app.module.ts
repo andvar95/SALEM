@@ -21,6 +21,8 @@ import { DonativosComponent } from './Components/donativos/donativos.component';
 import { CardMainComponent } from './Components/card-main/card-main.component';
 import { CardHistoriaComponent } from './Components/card-historia/card-historia.component';
 import { FormPeticionesComponent } from './Components/form-peticiones/form-peticiones.component';
+import { PESCAComponent } from './Components/pesca/pesca.component';
+import { CardPescaComponent } from './Components/card-pesca/card-pesca.component';
 
 
 @NgModule({
@@ -40,6 +42,8 @@ import { FormPeticionesComponent } from './Components/form-peticiones/form-petic
     CardMainComponent,
     CardHistoriaComponent,
     FormPeticionesComponent,
+    PESCAComponent,
+    CardPescaComponent,
 
   ],
   imports: [

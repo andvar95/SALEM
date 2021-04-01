@@ -1,0 +1,22 @@
+.transmisiones{
+    display:grid;
+    grid-template-columns: auto auto; 
+    overflow:hidden;
+    background-color:#f8f9fa;
+   
+    
+}
+.transmisiones>*{
+  
+    display:flex;
+    align-items:center;
+    align-content: center;
+    justify-content:center;
+}
+
+@media (max-width:600px){
+    
+    .transmisiones{
+        grid-template-columns: auto;
+    }
+}

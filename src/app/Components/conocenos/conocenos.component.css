@@ -3,6 +3,7 @@
 .col{
     display:grid;
     grid-template-columns:46% 46%;
+    background-color: #f8f9fa;
     
 }
 

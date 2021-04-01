@@ -1,11 +1,19 @@
 .form{
    
-    width:40vw;
+    width:60vw;
     margin:5% auto;
     border: 1px solid rgb(168, 167, 167);
     border-radius:10px;
   
 }
+
+@media (max-width:600px){
+    
+    .form{
+        width:90%;
+    }
+}
+
 
 .form>*{
     display:flex;
@@ -13,24 +21,26 @@
     margin:5% auto;  
     align-items: center;
     justify-content: center;
-
-    
 }
 
 
 textarea{
     width:80%;
     float:left;
-
+    resize:none;
 }
+
 textarea, input[type=text]{
     width:80%;
     margin:3% auto;
 }
+p{
+    width:80%;
+}
 
 .normal-in{
   
-    height:5vh;
+    height:7vh;
 }
 
 .peticion{
@@ -40,14 +50,17 @@ textarea, input[type=text]{
 }
 
 input[type=submit]{
-    border-radius:5px;
+    border-radius:10px;
     border:none;
-    width:50%;
-    height: 5vh;
-    background-color:#007bff;
-    color:white;
+    width:30%;
+    height: 10vh;
+    color:#007bff;
+    font-size:20px;
+    border:2px solid #007bff;
+    background-color:white;
 }
 
 input[type=submit]:hover{
-    background-color:#065cb8
+    background-color:#007bff;
+    color:white;
 }
