@@ -6,11 +6,21 @@
      position:relative;
     padding:1%;
     background-color:#495057;
-    display:flex;
-    justify-content: space-around;
+    display:grid;
+   grid-template-columns: auto auto;
     bottom:0;
 }
 
 .Footer_main>*{
-    text-align: center;
+    margin-top: 2%;
+    text-align: left;
+    justify-content: left;
+    
+}
+
+span{
+    width:10%;
+
+    display:flex;
+    justify-content:space-between;
 }

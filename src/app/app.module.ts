@@ -23,6 +23,7 @@ import { CardHistoriaComponent } from './Components/card-historia/card-historia.
 import { FormPeticionesComponent } from './Components/form-peticiones/form-peticiones.component';
 import { PESCAComponent } from './Components/pesca/pesca.component';
 import { CardPescaComponent } from './Components/card-pesca/card-pesca.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { CardPescaComponent } from './Components/card-pesca/card-pesca.component
     FormPeticionesComponent,
     PESCAComponent,
     CardPescaComponent,
+    
 
   ],
   imports: [
@@ -51,7 +53,8 @@ import { CardPescaComponent } from './Components/card-pesca/card-pesca.component
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    FacebookModule.forRoot()
+    FacebookModule.forRoot(),
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
