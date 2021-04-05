@@ -15,7 +15,7 @@ export class Navbar2Component implements OnInit {
   @HostListener("scroll", ['$event'])
   doSomethingOnInternalScroll(event:any){
     let scrollOffset = event.srcElement.scrollingElement.scrollTop;
-    console.log("scroll: ", scrollOffset);
+   
 
     if(scrollOffset>30){
       document.querySelector('#nav')?.classList.add('nav_color')

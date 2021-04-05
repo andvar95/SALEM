@@ -1,4 +1,7 @@
-
+.size{
+   width:60px;
+   height:60px;
+}
 
 
 
@@ -19,8 +22,17 @@
 }
 
 span{
-    width:10%;
+    width:10vw;
 
     display:flex;
     justify-content:space-between;
+}
+
+@media (max-width:600px){
+
+
+    span{
+        width:20vw;
+    }
+
 }

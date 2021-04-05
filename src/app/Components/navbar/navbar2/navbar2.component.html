@@ -1,3 +1,8 @@
+
+<div class="header">
+<input type="checkbox" id="menu_cel" >
+<label for ="menu_cel" class="nav_color"><img src="../../../../assets/img/menu.png"></label>
+
 <nav  (window:scroll)="doSomethingOnInternalScroll($event)" >
 
     <ul id="nav" class="navigator fontW-1  nav_transp">
@@ -15,7 +20,9 @@
             </ul>
             </li-->
 
+            <li><a routerLink = ''>Inicio</a>
 
+            </li>
         
             <li>
             <a>Ministerios  <span>&#9660;</span></a>
@@ -50,5 +57,7 @@
             </div>
 
     </ul>
+</nav>
+</div>
 
 <router-outlet></router-outlet>
