@@ -1,32 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@700&display=swap');
+
 
 .col{
     display:grid;
-    grid-template-columns:40% 40%;
+    grid-template-columns:46% 46%;
+    background-color: #f8f9fa;
+    
 }
+
+.fix-w{
+    min-height:70vh;
+    height:70vh;
+}
+@media (max-width:600px){
+    .col{
+        grid-template-columns: auto;
+    }
+}
+
 
 .Anuncio{
     background-color: white;
-    font-family: 'Roboto', sans-serif;
+    padding:5%;
+}
 
+.fontF-1{
+    color:black;
 }
 
 h2{
     font-weight: bold;
 }
-.abs{
-    position:relative;
- 
-    padding-top:5%;
-}
+
 
 .img_up{
     background-image:url("../../../../src/assets/img/Salem.jpg");
     width:100%;
     max-width:100%;
-    height:300px;
+  
 }
 
 h2{
     font-size:3rem;
+}
+
+.historia{
+    width:auto;
+}
+
+.arrow{
+    color:black;
+}
+
+.Anuncio{
+    margin:2% 3%;
+    
 }

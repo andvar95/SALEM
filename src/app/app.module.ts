@@ -7,7 +7,6 @@ import { HttpClientModule,HttpClient } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './Components/navbar/navbar/navbar.component';
 import { FaceBarComponent} from './Components/Facebook_Bar/face-bar/face-bar.component';
 import { Navbar2Component } from './Components/navbar/navbar2/navbar2.component';
 import { GreetingsComponent } from './Components/Intmessage/greetings/greetings.component';
@@ -15,18 +14,21 @@ import { BanerPresencialCComponent } from './Components/Presen_Bar/baner-presenc
 import { FooterSalemComponent } from './Components/Footer/footer-salem/footer-salem.component';
 import { SalemKidsBannerComponent } from './Components/SalemK_Bar/salem-kids-banner/salem-kids-banner.component';
 import { SlideMemuComponent } from './Components/slide-memu/slide-memu.component';
-import { HorariosCultosComponent } from './Components/menu_opt/horarios-cultos/horarios-cultos.component';
-import { TransmiComponent } from './Components/menu_opt/transmi/transmi.component';
 import { MainPageComponent } from './Components/main-page/main-page.component';
 import { ConocenosComponent } from './Components/conocenos/conocenos.component';
 import { SafeUrlPipe } from './Pipes/safe-url.pipe';
 import { DonativosComponent } from './Components/donativos/donativos.component';
+import { CardMainComponent } from './Components/card-main/card-main.component';
+import { CardHistoriaComponent } from './Components/card-historia/card-historia.component';
+import { FormPeticionesComponent } from './Components/form-peticiones/form-peticiones.component';
+import { PESCAComponent } from './Components/pesca/pesca.component';
+import { CardPescaComponent } from './Components/card-pesca/card-pesca.component';
+//import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     FaceBarComponent,
     Navbar2Component,
     GreetingsComponent,
@@ -34,12 +36,16 @@ import { DonativosComponent } from './Components/donativos/donativos.component';
     FooterSalemComponent,
     SalemKidsBannerComponent,
     SlideMemuComponent,
-    HorariosCultosComponent,
-    TransmiComponent,
     MainPageComponent,
     ConocenosComponent,
     SafeUrlPipe,
     DonativosComponent,
+    CardMainComponent,
+    CardHistoriaComponent,
+    FormPeticionesComponent,
+    PESCAComponent,
+    CardPescaComponent,
+    
 
   ],
   imports: [
@@ -47,7 +53,8 @@ import { DonativosComponent } from './Components/donativos/donativos.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    FacebookModule.forRoot()
+    FacebookModule.forRoot(),
+    //FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

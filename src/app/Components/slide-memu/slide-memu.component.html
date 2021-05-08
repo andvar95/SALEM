@@ -1,24 +1,28 @@
 
-<div class = "menuContainer">
+<div class = "menuContainer"  [ngClass] = "{'propositos':tipo==2,'main':tipo==0,'conocenos':tipo==1}">
     
 
 
-<div name ="elemento" class="elemento fade" >
+<div *ngFor="let data of datos" name ="elemento" class="elemento fade">
+ 
+    <app-card-main [data] = "data" *ngIf="tipo==0"> </app-card-main>
+    <app-card-historia [data] = "data" *ngIf="tipo==1"> </app-card-historia>
+    <app-card-pesca [data] = "data" *ngIf ="tipo==2"></app-card-pesca>
 
-    <app-horarios-cultos></app-horarios-cultos>
+    <!--app-horarios-cultos></app-horarios-cultos-->
     <!--img src = "./assets/img/im1.jpg"-->
 
 </div>
-<div  name ="elemento" class="elemento fade">
+<!--div  name ="elemento" class="elemento fade">
  
     <app-transmi></app-transmi>
 
-    <!--img src = "./assets/img/im1.jpg"-->
-</div>
+    
+</div-->
 
 
-<a class= "prev" (click) = "change(-1)" >&#10094;</a>
-<a class= "next" (click)="change(1)">&#10095;</a>
+<a class= "prev" (click) = "change(-1)" [ngClass] = "{'estilo_1':tipo==2,'estilo_2':tipo==1}" >&#10094;</a>
+<a class= "next" (click)="change(1)"   [ngClass] = "{'estilo_1':tipo==2,'estilo_2':tipo==1}" >&#10095;</a>
 <!--div class = "Greetings">
 </div-->
 
