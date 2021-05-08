@@ -4,7 +4,7 @@ jobs:
   build_and_preview:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@firebaseDeploy
+      - uses: actions/checkout@v2
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -13,5 +13,6 @@ jobs:
           projectId: centro-cristiano-salem
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
+
 
                
