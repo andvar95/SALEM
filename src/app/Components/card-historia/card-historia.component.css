@@ -5,14 +5,13 @@
     max-width:100%;
     border-radius: 10px;
     overflow:auto;
-      background-color:white;
+    background-color:white;
 }
 
 .img_card{
     border-radius: 10px;
     height: 30vh;
     width: auto;
-  
 }
 
 img{
