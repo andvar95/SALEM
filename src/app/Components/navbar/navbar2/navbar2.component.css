@@ -82,10 +82,9 @@ ul{
 
 /* Options in Nav Menu with fix pad of 10px  and display block */
 .navigator li a{
-   
-     padding:35px 10px;
-     display:block;
-     justify-content: center;
+    padding:35px 10px;
+    display:block;
+    justify-content: center;
 
 
      /* to left*/
@@ -110,15 +109,26 @@ ul{
 /*When i Hover in opciones its submenu will be displayed */
 
 transition: all 0.5s;
-   box-shadow: 0px 0px 3px 0px black;
+    box-shadow: 0px 0px 3px 0px black;
     display:block;
     justify-content: space-between;
     
-   
 }
 
 .options{
     display:flex;
+}
+
+.whatsapp{
+position:fixed;
+right:0;
+bottom:0;
+transition: all 0.3s;
+}
+
+.whatsapp:hover{
+    margin-bottom:1%;
+    transition: all 0.5s;
 }
 
 

@@ -2,24 +2,12 @@
 <div class="header">
 <input type="checkbox" id="menu_cel" >
 <label for ="menu_cel" class="nav_color"><img src="../../../../assets/img/menu.png"></label>
-
 <nav  (window:scroll)="doSomethingOnInternalScroll($event)" >
-
-    <ul id="nav" class="navigator fontW-1  nav_transp">
-    
+    <ul id="nav" class="navigator fontW-1  nav_transp"> 
         <a routerLink = ''>  <img src="../../../../assets/img/logo.png" width="50px" height="80px"></a>
-                
-
+            
            <div class="options">
-        
-            <!--li><a>Cultos</a>
-             <ul>
-                <li><a>Viernes</a></li>
-                <li><a>Sábados</a></li>
-                <li><a>Domingo</a></li>
-            </ul>
-            </li-->
-
+    
             <li><a routerLink = ''>Inicio</a>
 
             </li>
@@ -34,15 +22,10 @@
                 <li><a>Pastoral</a></li>
             </ul>
             
-            </li>
-    
-
-    
+            </li>   
             <li>
             <a routerLink ="donativos">Donativos</a>
             </li>
-    
-
             <li>
                 <a  >Conócenos  <span>&#9660;</span></a>
                 <ul id="submnenu" class="nav-sub">
@@ -50,13 +33,11 @@
                     <li><a routerLink = "pesca">5 Propositos</a></li>
                 </ul>
                 </li>
-        
-        
-       
-        
             </div>
-
     </ul>
+    <div class="whatsapp" id="whatsappButton" (click)="sendWhatsappMsj()">
+        <img src="../../../assets/img/whatsappIcon.png">
+    </div>
 </nav>
 </div>
 

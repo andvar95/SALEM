@@ -6,7 +6,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./navbar2.component.css']
 })
 export class Navbar2Component implements OnInit {
-
+  WHATSAPP_API_URL = `https://api.whatsapp.com/send?phone=+573017273110&text=Cuéntanos%20tu%20petición`;
   constructor() { }
 
   ngOnInit(): void {
@@ -30,6 +30,11 @@ export class Navbar2Component implements OnInit {
     }
 
   }
+
+  sendWhatsappMsj(){
+    window.open(this.WHATSAPP_API_URL)
+  }
+
 }
 
 
