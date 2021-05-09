@@ -9,10 +9,9 @@
     <div class="Blue_title">Sigue nuestras transmisiones de Facebook</div>
     <h2 *ngIf = "estado == 'LIVE' else noVivo" class="Blue_title">EN VIVO AHORA</h2>
     <ng-template #noVivo><h2 class="Blue_title">Última Transmisión</h2></ng-template>
-     <!--"ng serve --ssl --ssl-key server.key  --ssl-cert server.crt-->
+    <!--"ng serve --ssl --ssl-key server.key  --ssl-cert server.crt-->
     
     <iframe [src]=link_Vivo|safeUrl width="200vw" height="300vh" style="border:none;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-   
     <!--fb-video href="https://fb.watch/3zbK4gf8G2/"
     (startPlaying)="onVideoEvent('startedPlaying')"
     (paused)="onVideoEvent('paused')"

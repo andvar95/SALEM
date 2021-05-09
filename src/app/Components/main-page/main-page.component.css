@@ -2,12 +2,9 @@
     display:grid;
     grid-template-columns: auto auto; 
     overflow:hidden;
-    background-color:#f8f9fa;
-   
-    
+    background-color:var(--gray-bg-1);
 }
 .transmisiones>*{
-  
     display:flex;
     align-items:center;
     align-content: center;
@@ -15,7 +12,6 @@
 }
 
 @media (max-width:600px){
-    
     .transmisiones{
         grid-template-columns: auto;
     }

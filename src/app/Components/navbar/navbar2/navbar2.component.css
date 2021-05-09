@@ -34,13 +34,12 @@ span{
 }
 .navigator{
 
-     /*box-shadow: 0px 0px 3px 0px black;*/
-     display:flex;
-     justify-content: space-around;
-     width:100%;
-     max-width: 100%;
-     
-   
+    /*box-shadow: 0px 0px 3px 0px black;*/
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    max-width: 100%;
+    background-color:var(--gray-bg-1);
 }
 
 
@@ -54,7 +53,8 @@ span{
     background-color:rgba(0, 0, 0, 1);
     color:white
 }
- .nav_transp li a ,.nav_transp 
+
+.nav_transp li a ,.nav_transp 
 { background-color:rgba(0, 0, 0, 0);
     color:white}
 
