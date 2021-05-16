@@ -1,4 +1,4 @@
-import { Input } from '@angular/core';
+import { AfterContentInit, AfterViewInit, Input } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,15 +6,26 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './card-main.component.html',
   styleUrls: ['./card-main.component.css']
 })
-export class CardMainComponent implements OnInit {
+export class CardMainComponent implements OnInit{
 
-  @Input() data:any=[];
+  @Input() data:any;
 
-  constructor() { }
+ 
+
+  constructor() {
+    
+  }
+
+
+
   
 
   ngOnInit(): void {
-    console.log(this.data)
+    
+
   }
+
+
+  
 
 }

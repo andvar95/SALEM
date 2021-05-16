@@ -12,16 +12,14 @@ export class MainPageComponent implements OnInit {
   tipo:number = 0;
   datos:any = [
     {
-      text:`Transmisiones de Facebook \n
-           Domingo 9:00 am - 10:00 am`,
-      img:`./assets/img/Facebook.png`,
+     
+      img:`./assets/img/presenciales.jpeg`,
+  
 
     },
     {
-      text:`Reuniones Presenciales \n
-            Domingo 7:00 am - 8:00 am\n
-            Domingo 9:00 am - 10:00 am`,
-      img:`./assets/img/Facebook.png`,
+
+      img:`./assets/img/presenciales.jpeg`,
       
     }
 

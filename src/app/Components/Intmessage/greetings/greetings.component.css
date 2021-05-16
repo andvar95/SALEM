@@ -7,11 +7,22 @@
 
 
 .img_up{
-    background-image:url("../../../../../src/assets/img/Salem.jpg");
-
+    background-image:url("../../../../../src/assets/img/Salem.jpeg");
     background-repeat: none;
+    background-size:cover;
     width:100%;
     height:100vh;
+
+}
+
+@media(max-width:600px){
+
+    .img_up{
+        background-image:url("../../../../../src/assets/img/banner_phone.jpeg");
+        background-size:none;
+        width:100%;
+        height:200vh;
+    }
 
 }
 
